@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aventador | Choose Your Aventador</title>
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===== PRELOADER ===== -->
+<div class="preloader" id="preloader">
+  <div class="preloader-car"><i class="fa-solid fa-car-side"></i></div>
+</div>
+
+<!-- ===== HEADER ===== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#home" class="logo">
+      <img src="images/favicon.png" alt="Aventador" class="logo__icon">
+      <span>AVENTADOR</span>
+    </a>
+
+    <nav class="nav" id="nav">
+      <ul class="nav__list">
+        <li><a href="#home" class="nav__link active">Home</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#models" class="nav__link">Models</a></li>
+        <li><a href="#information" class="nav__link">Information</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </nav>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</header>
+
+<!-- ===== HOME / HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero__bg">
+    <img src="images/desert-bg.png" alt="Desert road">
+    <div class="hero__overlay"></div>
+  </div>
+
+  <div class="container hero__content">
+    <p class="hero__eyebrow">Choose your Aventador</p>
+    <h1 class="hero__title">AVENTADOR</h1>
+  </div>
+
+  <div class="hero__car">
+    <img src="images/car-black.png" alt="Lamborghini Aventador" id="heroCar">
+  </div>
+
+  <a href="#about" class="hero__scroll" aria-label="Scroll down">
+    <span class="hero__scroll-ring">
+      <i class="fa-solid fa-chevron-down"></i>
+    </span>
+    <span class="hero__scroll-text">Start</span>
+  </a>
+</section>
+
+<!-- ===== ABOUT / PERFORMANCE ===== -->
+<section class="performance" id="about">
+  <div class="container performance__inner">
+
+    <div class="performance__text">
+      <p class="section-eyebrow section-eyebrow--light">Beyond the ordinary</p>
+      <h2 class="performance__title">Designed to go<br>beyond performance</h2>
+      <p class="performance__desc">
+        Revolutionary thinking sits at the heart of every Aventador idea, whether it's a
+        design inspired by the aerospace industry or the technologies borrowed from the
+        racetrack and applied to the road. Every line exists for a reason.
+      </p>
+      <a href="#information" class="btn btn--outline">
+        Details <i class="fa-solid fa-arrow-right"></i>
+      </a>
+
+      <div class="performance__video">
+        <video src="videos/about-video.mp4" autoplay muted loop playsinline></video>
+        <div class="performance__video-caption">
+          <i class="fa-solid fa-play"></i> The Aventador in motion
+        </div>
+      </div>
+    </div>
+
+    <div class="performance__media">
+      <img src="images/car-silver-tunnel.png" alt="Aventador on the road">
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== MODELS / COLORS OF NATURE ===== -->
+<section class="colors" id="models">
+  <div class="container">
+    <div class="section-head">
+      <p class="section-eyebrow">Pick your palette</p>
+      <h2 class="section-title">Inspired by colors of nature</h2>
+    </div>
+
+    <div class="colors__grid">
+      <article class="color-card">
+        <img src="images/car-silver-tunnel.png" alt="Silver Aventador">
+        <div class="color-card__info">
+          <h3>Silver Aventador</h3>
+          <span>350+ km/h</span>
+        </div>
+      </article>
+
+      <article class="color-card">
+        <img src="images/car-yellow-dubai.png" alt="Yellow Aventador">
+        <div class="color-card__info">
+          <h3>Giallo Aventador</h3>
+          <span>355 km/h</span>
+        </div>
+      </article>
+
+      <article class="color-card">
+        <img src="images/car-blue-track.png" alt="Blue Aventador">
+        <div class="color-card__info">
+          <h3>Blu Aventador</h3>
+          <span>350+ km/h</span>
+        </div>
+      </article>
+    </div>
+
+    <!-- Interactive color configurator -->
+    <div class="configurator">
+      <div class="configurator__stage">
+        <img src="images/car-black.png" alt="Aventador configurator" id="configCar">
+      </div>
+      <div class="configurator__panel">
+        <p class="section-eyebrow">Build your own</p>
+        <h3 class="configurator__title" id="configTitle">Nero Aventador</h3>
+        <p class="configurator__desc">Tap a swatch to preview the Aventador in its available finishes.</p>
+        <div class="configurator__swatches">
+          <button class="swatch swatch--black active" data-car="images/car-black.png" data-name="Nero Aventador" aria-label="Black"></button>
+          <button class="swatch swatch--orange" data-car="images/car-orange.png" data-name="Arancio Aventador" aria-label="Orange"></button>
+          <button class="swatch swatch--white" data-car="images/car-white.png" data-name="Bianco Aventador" aria-label="White"></button>
+          <button class="swatch swatch--yellow" data-car="images/car-yellow.png" data-name="Giallo Aventador" aria-label="Yellow"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INFORMATION / SPECS ===== -->
+<section class="specs" id="information">
+  <div class="specs__bgtext" aria-hidden="true">780-4</div>
+  <div class="container specs__inner">
+
+    <div class="specs__head">
+      <p class="section-eyebrow">Choose your Aventador</p>
+      <h2 class="section-title">Aventador LP 780-4 Ultimae</h2>
+    </div>
+
+    <div class="specs__body">
+      <img src="images/car-orange-side.png" alt="Aventador LP 780-4 Ultimae" class="specs__car">
+
+      <div class="specs__stats">
+        <div class="stat">
+          <span class="stat__label">Power</span>
+          <span class="stat__value">573 <em>kW</em></span>
+          <span class="stat__sub">780 CV / 8500 rpm</span>
+        </div>
+        <div class="stat">
+          <span class="stat__label">Max speed</span>
+          <span class="stat__value">355 <em>km/h</em></span>
+          <span class="stat__sub">220 mph</span>
+        </div>
+        <div class="stat">
+          <span class="stat__label">0&ndash;100 km/h</span>
+          <span class="stat__value">2.8 <em>s</em></span>
+          <span class="stat__sub">0&ndash;60 mph</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT / SUBSCRIBE ===== -->
+<section class="subscribe" id="contact">
+  <div class="container subscribe__inner">
+
+    <div class="subscribe__media">
+      <img src="images/car-green-forest.png" alt="Aventador SVJ in the forest">
+    </div>
+
+    <div class="subscribe__content">
+      <p class="section-eyebrow section-eyebrow--light">Stay in the loop</p>
+      <h2 class="subscribe__title">Subscribe your Aventador</h2>
+      <p class="subscribe__desc">
+        Be the first to know about new colorways, limited editions and Aventador
+        events near you.
+      </p>
+
+      <form class="subscribe__form" id="subscribeForm">
+        <label>
+          <span>Name</span>
+          <input type="text" placeholder="Enter your name" required>
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" placeholder="Enter your email" required>
+        </label>
+        <button type="submit" class="btn btn--solid">
+          Send email <i class="fa-solid fa-paper-plane"></i>
+        </button>
+      </form>
+      <p class="subscribe__note" id="subscribeNote"></p>
+
+      <div class="contact-info">
+        <div><i class="fa-solid fa-location-dot"></i> Via Modena 12, Sant'Agata Bolognese, Italy</div>
+        <div><i class="fa-solid fa-phone"></i> +39 051 681 7611</div>
+        <div><i class="fa-solid fa-envelope"></i> hello@aventador.com</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <a href="#home" class="logo logo--footer">
+      <img src="images/favicon.png" alt="Aventador" class="logo__icon">
+      <span>AVENTADOR</span>
+    </a>
+
+    <ul class="footer__links">
+      <li><a href="#">Privacy &amp; Legal</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#">Locations</a></li>
+      <li><a href="#">News</a></li>
+      <li><a href="#">Careers</a></li>
+    </ul>
+
+    <div class="footer__social">
+      <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+      <a href="#" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+  <p class="footer__copy">&copy; <span id="year"></span> Aventador. All rights reserved.</p>
+</footer>
+
+<button class="scroll-top" id="scrollTop" aria-label="Back to top">
+  <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
